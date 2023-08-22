@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIUM</title>
+    <link rel="stylesheet" href="./common/global_style.css" />
+    <link rel="stylesheet" href="./main/index.css" />
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico" />
+    <link rel="stylesheet" href="./common/header.css" />
+    <link rel="stylesheet" href="./common/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e00cbd24a5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./main/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header include-html="../common/header.html"></header>
+    <div class="container">
+      <div class="advert_box flex_box_row">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="count slide_title_desc swiper-pagination"></div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background-color: #fffbf3">
+              <div class="slide-tit">
+                <div class="slide_title2">
+                  처음이신가요?<br />
+                  <span class="slide_title3">이용가이드</span>
+                </div>
+                <div class="slide_title_desc">
+                  PIUM을 처음 이용하시는 당신을 위한 가이드!
+                </div>
+              </div>
+              <img src="/src/img/banner_icon07.png" alt="compass" />
+            </div>
+            <div class="swiper-slide" style="background-color: #112647">
+              <div class="slide-tit">
+                <div class="slide_title4">
+                  완성 <span style="color: #fff">프로젝트</span><br />
+                  <p class="slide_title2" style="color: #fff">둘러보기</p>
+                </div>
+                <div class="slide_title_desc" style="color: #fff">
+                  다른 사람들은 어떻게 했을까?
+                </div>
+              </div>
+              <img src="/src/img/banner_icon04.png" alt="star" />
+            </div>
+            <div class="swiper-slide" style="background-color: #e0eeff">
+              <div class="slide-tit">
+                <div class="slide_title2">
+                  8월 <span style="color: #3e8bff">매칭데이</span><br />개최
+                  안내
+                </div>
+                <div class="slide_title_desc">
+                  새싹 교육생들을 위한 8월 매칭데이가 8월 18일에 열립니다!
+                </div>
+              </div>
+              <img src="/src/img/banner_icon01.png" alt="Party" />
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <img src="/src/img/ad_left.png" alt="ad_left" class="ad_left" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="/src/img/ad_right.png" alt="ad_right" class="ad_right" />
+          </div>
+        </div>
+        <div class="box_wrap flex_box_column">
+          <a href="/random_matching_apply/random_matching_apply.html">
+            <div class="green_box flex_box_column">
+              <p class="yellowgreen_text banner_point">지원이 어렵다면</p>
+              <p class="white_text banner_title">랜덤매칭 신청</p>
+            </div>
+          </a>
+          <a href="/create_project/create_project.html">
+            <div class="green_box flex_box_column">
+              <p class="yellowgreen_text banner_point">아이디어가 있다면</p>
+              <p class="white_text banner_title">프로젝트 생성</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <main>
+        <section class="section1">
+          <div class="sub_wrap">
+            <div class="sub_tit slide_title_desc">
+              프로젝트의 시작 <img src="./src/img/sesac_img.png" alt="" />
+            </div>
+            <div class="sub_tit2 section_title_point">
+              직무별
+              <span>프로젝트 둘러보기</span>
+            </div>
+          </div>
+          <ul class="select_wrap project_btn_container">
+            <li>전체보기</li>
+            <li>기획</li>
+            <li>UX/UI디자인</li>
+            <li>퍼블리싱</li>
+            <li>프론트엔드</li>
+            <li>백엔드</li>
+          </ul>
+        </section>
+        <section class="card_sec">
+          <p class="project_tit">
+            <a href="./project_list/project_list.html" class="project_title">
+              곧 마감 프로젝트 🚨 <img src="/src/img/next.png" alt="" />
+            </a>
+          </p>
+          <div class="project_subtitle_wrap flex_box_row">
+            <p class="project_subtitle">당신만 오면 바로 시작되는 프로젝트!</p>
+            <a href="/project_list/project_list.html">
+              <p class="more_text">더보기</p>
+            </a>
+          </div>
+          <ul class="card_wrap">
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">PIUM</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">[강동] 새싹 프로젝트 매칭 플랫폼</p>
+                  <p class="card_desc">
+                    푸시알림 관심제품 추천 및 핫딜 공유 서비스
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">빅데이터 기반<br />꽃집 예약 솔루션</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">
+                    [마포] 빅데이터 기반 꽃집 예약 솔루션
+                  </p>
+                  <p class="card_desc">
+                    빅데이터 기반 맞춤 꽃상품 가격 측정 및 소비자 예약수령
+                    서비스
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">기깔나는 사람들</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">[강서] 온라인 공간 서비스</p>
+                  <p class="card_desc">
+                    포트폴리오, 구인/구직, 사이드 프로젝트를 통합하는 온라인
+                    공간 서비스
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">수의사 상담 플랫폼</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">[용산] 수의사 상담 플랫폼</p>
+                  <p class="card_desc">
+                    반려동물 관리를 위한 수의사 온라인 상담 서비스
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="card_sec">
+          <p class="project_tit">
+            <a href="./project_list/project_list.html" class="project_title">
+              최신 프로젝트 🎈
+              <img src="/src/img/next.png" alt="" />
+            </a>
+          </p>
+          <div class="project_subtitle_wrap flex_box_row">
+            <p class="project_subtitle">새로운 프로젝트를 탐색해봐요!</p>
+            <a href="/project_list/project_list.html">
+              <p class="more_text">더보기</p>
+            </a>
+          </div>
+          <ul class="card_wrap">
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">myfolio</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">[강동] 마이폴리오 myfolio</p>
+                  <p class="card_desc">
+                    입시컨설팅의 대중화를 목표로 하는 생활기록부 원스톱 서비스
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">가티</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">
+                    [금천] 레저 스포츠 매칭 서비스 ‘가티’
+                  </p>
+                  <p class="card_desc">
+                    이용자 특성에 맞춘 레저 스포츠 매칭 및 스포츠 특화 심화
+                    중고거래 서비스
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">대학생 국제교류<br />소모임 서비스</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">[종로] 대학생 국제교류 소모임 서비스</p>
+                  <p class="card_desc">
+                    한국인, 외국인 대학생이 함께 교류할 수 있는 모임 플랫폼
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <span class="like_button"></span>
+              <a href="/project_detail/project_detail.html">
+                <div class="thumb">
+                  <p class="thumb_text">수제케이크<br />정보제공 앱</p>
+                  <img src="./src/img/thumbnail.png" alt="프로젝트 사진" />
+                </div>
+              </a>
+              <a href="/project_detail/project_detail.html">
+                <div class="card_body">
+                  <p class="card_title">[서대문] 수제케이크 정보제공 앱</p>
+                  <p class="card_desc">
+                    개인 취향에 따라 흩어져있는 수제 케이크 가게 정보 제공 및
+                    예약 앱
+                  </p>
+                </div>
+              </a>
+              <div class="card_footer">
+                <div class="recruiting_wrap flex_box_row">
+                  <span class="card_footer_text">모집중</span>
+                  <span class="card_footer_text">4/5</span>
+                  <img src="/src/img/Group 629971.png" />
+                </div>
+                <ul class="modal">
+                  <li>
+                    <div class="group_position modal_text_L">기획</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">UX/UI디자인</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">퍼블리싱</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="group_position modal_text_L">프론트엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                  <li style="border-bottom: none">
+                    <div class="group_position modal_text_L">백엔드</div>
+                    <div class="modal_text_S flex_box_column">
+                      <div class="mentor">멘토 1명</div>
+                      <div class="mentee">멘티 1명</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card_footer_like">
+                  <span>❤</span>
+                  <span class="like_count">0</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card_sec">
+          <p class="project_tit">
+            <a href="#" class="project_title">
+              완성 프로젝트 ✨
+              <img src="/src/img/next.png" alt="" />
+            </a>
+          </p>
+          <div class="project_subtitle_wrap flex_box_row">
+            <p class="project_subtitle">피움에서 완성된 프로젝트 모음</p>
+            <a href="#">
+              <p class="more_text">더보기</p>
+            </a>
+          </div>
+          <div class="card_container">
+            <ul class="card_wrap">
+              <a href="#">
+                <li class="card_size">
+                  <img src="/src/img/completed_pro1.png" alt="completed_pro1" />
+                </li>
+              </a>
+
+              <a href="#">
+                <li class="card_size">
+                  <img src="/src/img/completed_pro2.png" alt="completed_pro1" />
+                </li>
+              </a>
+
+              <a href="#">
+                <li class="card_size">
+                  <img src="/src/img/completed_pro3.png" alt="completed_pro1" />
+                </li>
+              </a>
+
+              <a href="#">
+                <li class="card_size" style="margin-right: 0px">
+                  <img src="/src/img/completed_pro4.png" alt="completed_pro1" />
+                </li>
+              </a>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- 공간예약 -->
+    <section class="section2">
+      <div class="sub_wrap">
+        <a href="./booking/booking.html">
+          <span class="page_title">
+            캠퍼스
+            <span class="page_title_point">공간예약</span>
+          </span>
+        </a>
+        <div class="sub_tit slide_title_desc">
+          서울 전역 13개의 새싹 캠퍼스, 편하게 모여 작업하세요!
+        </div>
+
+        <div class="cards_container" style="display: flex">
+          <ul>
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_0.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_1.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_5.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_3.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_2.jpg)"
+                ></div>
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_0.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_1.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_5.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_3.jpg)"
+                ></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="/booking/booking.html">
+                <div
+                  class="card_img"
+                  style="background-image: url(./src/img/gd_2.jpg)"
+                ></div>
+              </a>
+            </li>
+          </ul>
+          <!-- <a href="/booking/booking.html">
+      <img src="./src/img/gd_0.jpg" alt="강동" class="card_img" />
+    </a> -->
+        </div>
+      </div>
+    </section>
+    <footer include-html="../common/footer.html"></footer>
+    <script src="./includeHTML.js"></script>
+    <!-- <script src="./common/header.js"></script> -->
+  </body>
+</html>

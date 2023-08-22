@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIUM</title>
+    <link
+      rel="stylesheet"
+      href="../jquery-ui-1.13.2.custom/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="./css/datepicker.css" />
+    <link rel="stylesheet" href="../common/global_style.css" />
+    <link rel="stylesheet" href="./css/create_project.css" />
+    <link rel="icon" type="image/x-icon" href="../src/img/favicon.ico" />
+    <link rel="stylesheet" href="../common/header.css" />
+    <link rel="stylesheet" href="../common/footer.css" />
+    <link rel="stylesheet" href="path/to/assets/content-styles.css" type="text/css">
+    <link rel="stylesheet" href="path/to/assets/content-styles.css" type="text/css">
+
+
+    <script
+      src="https://kit.fontawesome.com/e00cbd24a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="../jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="../includeHTML.js"></script>
+    <script defer src="./js/create_project.js"></script>
+  </head>
+  <body>
+    <header include-html="../common/header.html"></header>
+    <div class="container">
+      <main>
+        <p class="page_title">
+          <span class="page_title_point">프로젝트</span> 생성
+        </p>
+        <section>
+          <p class="section_title">프로젝트 기본 정보를 입력해주세요.</p>
+          <p class="border_bottom"></p>
+          <div class="sec_cont_wrap flex_box_column">
+            <div class="flex_box_row">
+              <div class="select_box flex_item">
+                <p class="card_title">작업 공간</p>
+                <div class="dropdown_btn">
+                  <input
+                    type="text"
+                    class="dropdown_btn_input"
+                    placeholder="장소 미정 / 캠퍼스"
+                  />
+                  <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                </div>
+                <!-- <div class="auto_complete"></div> -->
+                <ul class="dropdown_list campus_list">
+                  <li>장소 미정</li>
+                  <li>영등포캠퍼스</li>
+                  <li>금천캠퍼스</li>
+                  <li>마포캠퍼스</li>
+                  <li>용산캠퍼스</li>
+                  <li>강동캠퍼스</li>
+                  <li>강서캠퍼스</li>
+                  <li>동작캠퍼스</li>
+                  <li>광진캠퍼스</li>
+                  <li>서대문캠퍼스</li>
+                  <li>중구캠퍼스</li>
+                  <li>종로캠퍼스</li>
+                  <li class="flex_box_row">
+                    직접입력<input type="text" class="flex_item" />
+                  </li>
+                </ul>
+              </div>
+              <div class="select_box flex_item">
+                <p class="card_title">진행 기간</p>
+                <div class="date_wrap flex_box_row">
+                  <div class="date_input_wrap flex_item">
+                    <div class="date_btn">
+                      <input
+                        type="text"
+                        class="date_btn_input"
+                        placeholder="시작 날짜"
+                      />
+                      <!-- <i class="fa-solid fa-calendar-days"></i> -->
+                    </div>
+                  </div>
+                  <div class="date_input_wrap flex_item">
+                    <div class="date_btn">
+                      <input
+                        type="text"
+                        class="date_btn_input"
+                        placeholder="마감 날짜"
+                      />
+                      <!-- <i class="fa-solid fa-calendar-days"></i> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chips_wrap">
+              <p class="card_title">작업 요일</p>
+              <ul class="chips_list flex_box_row">
+                <li class="undecided">요일 미정</li>
+                <li>월요일</li>
+                <li>화요일</li>
+                <li>수요일</li>
+                <li>목요일</li>
+                <li>금요일</li>
+                <li>토요일</li>
+                <li>일요일</li>
+              </ul>
+            </div>
+            <div class="chips_wrap">
+              <p class="card_title">모집 기술</p>
+              <ul class="chips_list flex_box_row">
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>React</li>
+                <li>Nextjs</li>
+                <li>Java</li>
+                <li>Spring</li>
+                <li>Nodejs</li>
+                <li>Mongodb</li>
+                <li>Python</li>
+                <li>Figma</li>
+                <li>Zeplin</li>
+              </ul>
+            </div>
+            <div class="box_wrap">
+              <p class="card_title">나의 포지션</p>
+              <div class="box">프론트엔드 / 멘토</div>
+            </div>
+            <div class="add_select_box">
+              <p class="card_title">모집 포지션</p>
+              <ul class="recruit_position_list"></ul>
+              <div class="flex_box_row">
+                <div class="select_box flex_item">
+                  <div class="dropdown_btn">
+                    <input
+                      type="text"
+                      class="role_input dropdown_btn_input"
+                      placeholder="포지션을 선택해주세요"
+                    />
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                  </div>
+                  <!-- <div class="auto_complete"></div> -->
+                  <ul class="dropdown_list role_list">
+                    <li>기획</li>
+                    <li>UX/UI디자인</li>
+                    <li>퍼블리셔</li>
+                    <li>프론트엔드</li>
+                    <li>백엔드</li>
+                  </ul>
+                </div>
+                <div class="plus_minus_btn flex_box_row">
+                  멘토
+                  <i class="mentor_btn_minus fa-solid fa-minus"></i>
+                  <span><span class="mentor_num">1</span>명</span>
+                  <i class="mentor_btn_plus fa-solid fa-plus"></i>
+                </div>
+                <div class="plus_minus_btn flex_box_row">
+                  멘티
+                  <i class="mentee_btn_minus fa-solid fa-minus"></i>
+                  <span><span class="mentee_num">1</span>명</span>
+                  <i class="mentee_btn_plus fa-solid fa-plus"></i>
+                </div>
+                <div class="add_btn">추가</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <p class="section_title">프로젝트 대표 이미지를 설정해주세요.</p>
+          <p class="border_bottom"></p>
+          <label class="file_upload_box">
+            <img
+              class="preview_img"
+              src="../src/img/choose_file_img.png"
+              alt=""
+            />
+            <input type="file" class="file_upload_input" accept="image/*" />
+          </label>
+        </section>
+        <section>
+          <p class="section_title">프로젝트에 대해 소개해주세요</p>
+          <p class="border_bottom"></p>
+          <div class="flex_box_column">
+            <div class="input_box">
+              <p class="card_title">프로젝트명</p>
+              <input
+                class="project_name"
+                type="text"
+                placeholder="12글자 이내로 작성"
+                maxlength="12"
+              />
+            </div>
+            <div class="input_box">
+              <p class="card_title">프로젝트 설명</p>
+              <!-- 프로젝트 설명 에딧박스 -->
+              <textarea name="text" class="editor" id="editor1"></textarea>
+
+            </div>
+
+            <a href="../project_list/project_list.html">
+              <div class="button_container">
+                <button class="submit_btn btn_save">완료</button>
+              </div>
+            </a>
+            <!-- <div class="submit_btn button_selected_all">완료</div> -->
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer include-html="../common/footer.html"></footer>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <!-- <script src="./ckeditor5/build/ckeditor.js"></script> -->
+    <script type="text/javascript">
+        // editor 
+        ClassicEditor
+            .create(document.querySelector("#editor1"))
+            .then(editor => {
+                const textLines = [
+                    `
+                    📢
+                    프로젝트 파악이 쉽도록 한줄정도의 소개를 적어주세요!
+                    <br />
+                    (예시)
+                    <br />
+                    “사이드 프로젝트 접근이 어려운 새싹 수강생들을 위한 프로젝트 매칭 플랫폼”
+                    <br />
+                      PIUM(Project Insight User Matching)
+                    <br /><br />
+                    👩🏻‍💻 [프로젝트 소개]
+                    <br />
+                    프로젝트 배경, 목적, 타겟 등 자유롭게 적어주세요!
+                    <br />
+                    (예시)
+                    <br />
+                    “기존에 존재하는 프로젝트 매칭 플랫폼은 경험자들 뿐인데
+                    <br />
+                    새싹 수강생들 같은 초심자들은 프로젝트를 어디서 어떻게 찾지?”
+                    <br />
+                    <br />
+                    새싹 수강생들은 다른 분야에서 진입한 사람들이 많고
+                    <br />
+                    팀프로젝트에 대한 부담과 걱정이 있을 수 밖에 없습니다.
+                    <br />
+                    또한 새싹 교육과정은 기획/디자인/개발 등 분야가 나뉘어서 배우고
+                    <br />
+                    하나의 캠퍼스에서 팀프로젝트를 자발적으로 모으기 힘들다고 생각하여 
+                    <br />
+                    팀프로젝트의 진입장벽을 낮추고 이를 통해 협업을 배우고 함께 성장할 수 있도록 지원하는 것입니다.
+                    <br /><br />
+                    📌 [주요기능]
+                    <br />
+                    대략적인 아이디어만 있는 상태라면 생략가능합니다.
+                    <br />
+                    (예시)
+                    <br />
+                    &#183; 프로젝트 생성페이지
+                    <br />
+                    &#183; 멘토-멘티 매칭서비스
+                    <br />
+                    -> 프로젝트 진행시 각 직무별로 최소 한 명의 멘토와 멘티를 둠.
+                    <br />
+                      해당 시스템에선 멘토라고 해도 같은 수강생이므로 기술적인 전문성보다
+                      <br />
+                      지식을 나누고 함께 성장하는 경험 강조 & 수업을 따라가는데 문제가 없는 정도라면 멘티 지원을 권유
+                    <br />
+                    &#183; 랜덤매칭 서비스
+                    <br />
+                    -> 팀 선택이 어려운 수강생들을 위해 랜덤으로 팀을 매칭해주는 서비스
+                    <br />
+                    &#183; 새싹 캠퍼스별 공간 예약 서비스
+                    <br />
+                    ->구글폼을 통해 각 캠퍼스별 스터디 공간, 날짜, 이용시간 예약가능
+                    <br /><br />
+                    😊 [이런 분이라면 더 좋아요]
+                    <br />
+                    (예시)
+                    <br />
+                    &#183; 책임감을 갖고 열정적으로 하실 수 있는 분
+                    <br />
+                    &#183; 프로젝트 리드 경험이 있거나 가능하신 분
+                    <br />
+                    &#183; 서비스를 장기적으로 함께 이끌어나가고 싶은 분
+                    <br />
+                    &#183; 사용자 경험을 우선하는 프로젝트를 진행하고 싶은 분
+                    <br />
+                    &#183; 아이디어, 의견 등을 적극적으로 제안해주실 수 있는 분
+                    <br />
+                    &#183; 타인을 배려한 커뮤니케이션이 가능하신 분
+                    <br /><br />
+                    📌 [프로젝트 진행 방식]
+                    <br />
+                    (예시)
+                    <br />
+                    &#183; 주 1-2회 온/오프라인 병행 
+                    <br />
+                      (온라인 : zoom,slack,Discord) (오프라인 : 각 새싹 캠퍼스 이용)
+                    <br />
+                    &#183; 팀원들이 모두 모인 후 조율 가능합니다!
+                    <br />
+                    &#183; 협업툴 : Zoom, Slack, Notion, Figma, Discord
+                    <br /><br />
+                    📌 [프로젝트 기간]
+                    `
+                ];
+
+                const textToAdd = textLines.join("<br/><br/>");
+                editor.setData(textToAdd);
+
+                const addTextButton = document.querySelector("#templateBringing");
+                addTextButton.addEventListener('click', function() {
+                    const currentData = editor.getData();
+                    const newData = currentData ? currentData + "<br/><br/>" + textToAdd : textToAdd;
+                    editor.setData(newData);
+                });
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+    </script>
+
+
+  </body>
+</html>
+
